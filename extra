@@ -1,0 +1,142 @@
+topics
+state
+class
+component  parent>>child child>>parent
+filter,indexof,map
+
+data binding 
+event binding
+
+
+
+
+
+
+components 
+           1. function
+           2. class extends React.Components
+           3. Hooks
+
+
+--->class components
+>>logical components
+>>use to call api,manage the logic and display
+>>it can maintain state
+
+
+
+--->function components
+>>Dump components
+>we use to display purpose
+>>it can not maintain state
+
+
+
+
+//passing data 
+
+parent >> child ---->we use props to pass data
+child >> parents---->we use props with function
+
+--->props
+>>use to transport any data or state
+>>immutable
+>>it can tansfor data btn only nested components
+
+
+--->state
+>> its like declaration of local variable
+>> it is an object where any data interruption will happens
+>> all declaration you have to do on initial mode
+>> it is mutable
+
+
+
+//types to apply css in React
+
+1.inline-->style={{color:"red"}};
+
+
+2.as an objesct in react native
+
+        const myStyle={
+            color:"red",
+            bagroundColor:"white"
+        }
+
+        <h1 style={myStyle.color}></h1>
+
+3.making seperate file of .css and import it where you want
+
+
+
+//event handling
+
+
+myChange=(event)=>{
+    1. event.target.value. //get value written in input
+    2. this.setState({text:event.target.value})  --->method to change the state ---->text we want to change 
+}
+
+note:whenever state is updates component will re-render
+
+-------------------------------------------------------------------------
+//revision from js 
+
+---> map()
+1] The map() method creates a new array with the results of calling a function for every array element.
+
+2] The map() method calls the provided function once for each element in an array, in order.
+
+3] Note: map() does not execute the function for array elements without values.
+
+3] Note: this method does not change the original array.
+
+---->indexof()
+1] The indexOf() method searches the array for the specified item, and returns its position.
+
+2] Returns -1 if the item is not found.
+
+3] If the item is present more than once, the indexOf method returns the position of the first occurence.
+
+---->filter()
+
+1] The filter() method creates an array filled with all array elements that pass a test (provided as a function).
+
+2] Note: filter() does not execute the function for array elements without values.
+
+3] Note: filter() does not change the original array.
+
+
+------------------------------------------------------------------------------
+
+26th...
+
+function add(a,b){
+    return a+b;     // //where we want define function we use it -->use   
+}
+
+add(1,2)  //where we want to pass data we use it-->call
+
+
+//filter
+
+var a=[2,3,5,2,6,5,9]
+a.filter((data)=>{console.log(data>5)})
+
+
+--------------------------------------------------------------------------------------------
+
+27th...
+
+##### secound-app ROUTING #####
+
+pkg-->>
+1] npm i react-router-dom
+2] import {BrowswerRouter,Router} from 'react-router-dom'--->methods inside packages it need to use for routing
+
+
+
+
+
+
